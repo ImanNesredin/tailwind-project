@@ -18,7 +18,7 @@ A clean and simple Task Manager landing page built using Tailwind CSS. This sing
 ![Home](home.png)
 
 ### 🌟 Option section
-![option](option.png)
+![option](options.png)
 
 ### 📝 Sign Up Form
 ![Sign in](sign-in.png)
