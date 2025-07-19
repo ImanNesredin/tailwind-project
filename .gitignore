@@ -1,0 +1,6 @@
+# Ignore node modules
+node_modules/
+
+# Ignore Tailwind build output
+dist/
+output.css

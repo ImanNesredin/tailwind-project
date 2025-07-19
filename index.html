@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task Manager</title>
+  <link href="dist/output.css" rel="stylesheet" />
+  <style>
+    .glass {
+      background: rgba(114, 114, 114, 0.1);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(114, 114, 114, 0.2);
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-brightRed to-veryPaleRed min-h-screen">
+  <header class="bg-brightRedSupLight text-brightRed p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Task Manager</h1>
+      <nav>
+        <div class="flex space-x-6 md:space-x-4">
+          <div class="hover:text-darkGrayishBlue transition-colors"><a href="#home">Home</a></div>
+          <div class="hover:text-darkGrayishBlue transition-colors"><a href="#features">Features</a></div>
+          <div class="hover:text-darkGrayishBlue transition-colors"><a href="#contact">Contact</a></div>
+          <div class="hover:text-darkGrayishBlue transition-colors"><a href="#signin">Sign In</a></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto p-4">
+    <!-- Home Section -->
+    <section id="home" class="mb-10">
+      <div class="container flex flex-col-reverse mt-10 px-6 items-center space-y-0 md:flex-row md:space-y-0">
+        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+          <h1 class="max-w-md text-4xl font-bold text-darkBlue mb-4 text-center md:text-5xl md:text-left">Bring Your Tasks and unlock your productivity</h1>
+          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+            Manage your daily tasks efficiently with our intuitive task manager.
+          </p>
+          <a href="#" class="px-6 py-3 text-white bg-brightRed rounded-full hover:bg-brightRedLight transition-colors">Get Started</a>
+        </div>
+        <div class="md:w-1/2 flex flex-row gap-6 justify-center items-center">
+          <img src="img/list.svg" alt="Task List" class="w-24 h-24 md:w-12 md:h-12">
+          <img src="img/watch.svg" alt="Time Management" class="w-24 h-24 md:w-12 md:h-12">
+          <img src="img/cal.svg" alt="Calendar" class="w-24 h-24 md:w-12 md:h-12">
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="mb-32 py-20 bg-white/10 backdrop-blur-sm relative z-10">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl font-semibold mb-12">Features</h2>
+        <div class="flex flex-col md:flex-row gap-8 px-6 items-stretch justify-between">
+          <div class="glass p-6 rounded-xl flex-1 hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <h3 class="text-xl font-bold mb-2">Quick Tasks</h3>
+            <p>Create and update your to-do list instantly.</p>
+          </div>
+          <div class="glass p-6 rounded-xl flex-1 hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <h3 class="text-xl font-bold mb-2">Reminders</h3>
+            <p>Never miss a deadline with timely reminders and notifications.</p>
+          </div>
+          <div class="glass p-6 rounded-xl flex-1 hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <h3 class="text-xl font-bold mb-2">Progress Cards</h3>
+            <p>Track your progress visually with interactive progress cards.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Task Options Section -->
+    <section class="mb-32">
+      <h2 class="text-xl font-semibold mb-6">Choose Your Tasks:</h2>
+      <div class="flex flex-col md:flex-row gap-6 items-stretch justify-between">
+        <div class="glass rounded-xl flex-1 hover:scale-105 transition-transform duration-300 cursor-pointer overflow-hidden h-64 md:h-80 relative border border-white/30 bg-white/10">
+          <img src="img/book.jpg" alt="Reading" class="w-full h-full object-cover" />
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+            <span class="text-white font-semibold text-lg">Reading Books</span>
+          </div>
+        </div>
+        <div class="glass rounded-xl flex-1 hover:scale-105 transition-transform duration-300 cursor-pointer overflow-hidden h-64 md:h-80 relative border border-white/30 bg-white/10">
+          <img src="img/work.jpg" alt="Working" class="w-full h-full object-cover" />
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+            <span class="text-white font-semibold text-lg">Working</span>
+          </div>
+        </div>
+        <div class="glass rounded-xl flex-1 hover:scale-105 transition-transform duration-300 cursor-pointer overflow-hidden h-64 md:h-80 relative border border-white/30 bg-white/10">
+          <img src="img/site.jpg" alt="Entertaining" class="w-full h-full object-cover" />
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+            <span class="text-white font-semibold text-lg">Entertaining</span>
+          </div>
+        </div>
+        <div class="glass rounded-xl flex-1 hover:scale-105 transition-transform duration-300 cursor-pointer overflow-hidden h-64 md:h-80 relative border border-white/30 bg-white/10">
+          <img src="img/volenteer.jpg" alt="Volunteering" class="w-full h-full object-cover" />
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+            <span class="text-white font-semibold text-lg">Volunteering</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- sign in Section -->
+  <section id="signin" class="max-w-md p-8 mb-32 rounded-2xl border border-white/30 backdrop-blur-xl bg-white/10 shadow-2xl">
+    <form class="space-y-6 w-full max-w-md mx-auto">
+      <h2 class="text-3xl font-bold text-white text-center">Sign In</h2>
+
+      <div>
+        <input
+          type="text"
+          required
+          placeholder="Username"
+          class="bg-white/10 backdrop-blur-md placeholder-white/70 text-white border border-white/30 rounded-lg px-4 py-2  w-full max-w-md mx-auto"
+        />
+      </div>
+
+      <div>
+        <input
+          type="password"
+          required
+          placeholder="Password"
+          class="bg-white/10 backdrop-blur-md placeholder-white/70 text-white border border-white/30 rounded-lg px-4 py-2 w-full max-w-md mx-auto"
+        />
+      </div>
+
+      <button
+        type="submit"
+        class="w-full py-2 rounded-full bg-white text-black font-semibold hover:text-darkGrayishBlue transition"
+      >
+        Sign in
+      </button>
+
+      <div class="text-sm text-white text-center">
+        Or do you have an account? <a href="#signin" class="font-semibold hover:underline">LOGIN</a>
+      </div>
+    </form>
+  </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
+      <p class="mb-4 text-gray-700">
+        Have questions or feedback? Reach out to us anytime.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
