@@ -6,8 +6,7 @@ A clean and simple Task Manager landing page built using Tailwind CSS. This sing
 
 ## ✨ Features
 
-- Responsive glassmorphism login & sign-up form
-- Creative UI layout with floating background design
+- Responsive glassmorphism sign-up form
 - Built entirely with Tailwind CSS (no JavaScript)
 - CDN and local setup options
 - Single-page layout with navigation
@@ -37,6 +36,6 @@ A clean and simple Task Manager landing page built using Tailwind CSS. This sing
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/task-manager-ui.git
+   git clone https://github.com/ImanNesredin/tailwind-project.git
    ```
 ---
